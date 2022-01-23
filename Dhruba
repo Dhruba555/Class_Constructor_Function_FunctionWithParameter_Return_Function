@@ -1,0 +1,38 @@
+<?php
+
+class Blog
+{
+    public $image;
+    public $title;
+    public $description;
+    public $comment;
+
+    function __construct($mtitle,$mimage,$mdescription,$mcomment)
+    {
+        $this->image = $mimage;
+        $this->title = $mtitle;
+        $this->description = $mdescription;
+        $this->comment = $mcomment;
+    }
+
+    function ShowBlog()
+    {
+        echo "Title : {$this->title} <br>";
+        echo "Image : {$this->image} <br>";
+        echo "Description : {$this->description} <br>";
+        echo "Comment : {$this->comment} <br><br>";
+    }
+}
+
+$perOne = new Blog("Tech","https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.","kjhsjghxbvchgvshabhjkbxk",);
+$perOne->ShowBlog();
+
+$perTwo = new Blog("Flower","https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.","hdfgycggygcrriugywgvvxb");
+$perTwo->ShowBlog();
+
+
+
+
+
+
+?>
